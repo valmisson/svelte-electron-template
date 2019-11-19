@@ -10,9 +10,10 @@
     "dev": "run-p start:dev autobuild start:electron",
     "start:dev": "sirv public --single --dev",
     "start:electron": "electron .",
-    "jslint": "eslint src/**",
     "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postuninstall": "electron-builder install-app-deps",
+    "jslint": "eslint src/**",
+    "csslint": "stylelint src/**"
   },
   "dependencies": {},
   "devDependencies": {
@@ -34,6 +35,8 @@
     "rollup-plugin-svelte": "^5.1.0",
     "rollup-plugin-terser": "^5.1.2",
     "sirv-cli": "^0.4.5",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0",
     "svelte": "^3.12.1"
   }
 }
