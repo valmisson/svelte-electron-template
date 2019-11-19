@@ -1,0 +1,31 @@
+{
+  "name": "music-player",
+  "description": "Play de Musica criado com Electron e SvelteJS",
+  "author": "Valmisson Grizorte - <missongrizorte@gmail.com>",
+  "license": "MIT",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild start:electron",
+    "start:dev": "sirv public --single --dev",
+    "start:electron": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chokidar": "^3.3.0",
+    "electron": "^7.1.0",
+    "electron-builder": "^22.1.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.26.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "sirv-cli": "^0.4.5",
+    "svelte": "^3.12.1"
+  }
+}
