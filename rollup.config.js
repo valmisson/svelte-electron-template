@@ -4,6 +4,7 @@ import commonjs from 'rollup-plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import postcss from 'rollup-plugin-postcss'
+import alias from 'rollup-plugin-alias'
 
 // postcss plugins
 import postcssImport from 'postcss-import'
@@ -43,6 +44,17 @@ export default {
       ],
       extract: true,
       extensions: ['.css']
+    }),
+
+    // define alias
+    alias({
+      resolve: ['', '.js', '.svelte'],
+      entries: [
+        { find: '~', replacement: './' },
+        { find: '@', replacement: 'src' },
+        { find: '@components', replacement: 'src/components' },
+        { find: '@views', replacement: 'src/views' }
+      ]
     }),
 
     // If you have external dependencies installed from
