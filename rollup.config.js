@@ -16,7 +16,7 @@ export default {
   input: 'src/renderer.js',
   output: {
     sourcemap: true,
-    format: 'iife',
+    format: 'umd',
     name: 'app',
     file: 'public/assets/bundle.js'
   },
