@@ -1,6 +1,6 @@
 {
-  "name": "music-player",
-  "description": "Play de Musica criado com Electron e SvelteJS",
+  "name": "svelte-electron-template",
+  "description": "A template for building Electron apps with SvelteJS",
   "author": "Valmisson Grizorte - <missongrizorte@gmail.com>",
   "license": "MIT",
   "main": "src/main.js",
