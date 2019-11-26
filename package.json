@@ -1,5 +1,6 @@
 {
   "name": "svelte-electron-template",
+  "version": "0.1.0",
   "description": "A template for building Electron apps with SvelteJS",
   "author": "Valmisson Grizorte - <missongrizorte@gmail.com>",
   "license": "MIT",
