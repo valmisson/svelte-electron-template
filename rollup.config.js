@@ -1,10 +1,10 @@
 import svelte from 'rollup-plugin-svelte'
 import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
+import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import postcss from 'rollup-plugin-postcss'
-import alias from 'rollup-plugin-alias'
+import alias from '@rollup/plugin-alias'
 
 // postcss plugins
 import postcssImport from 'postcss-import'
